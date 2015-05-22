@@ -3,61 +3,37 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <SeekBar
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/seekBar"
-        android:indeterminate="false"
-        android:max="10"
-        android:progress="1" />
+        android:text="灰度化"
+        android:id="@+id/gray_btn"
+        android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="whsize:"
-        android:id="@+id/whsizeText" />
-
-    <SeekBar
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/seekBar2"
-        android:max="10"
-        android:progress="1"
-        android:indeterminate="false" />
+        android:text="灰度增强"
+        android:id="@+id/enhance_btn"
+        android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="factor:"
-        android:id="@+id/factorText" />
+        android:text="二值化"
+        android:id="@+id/binarize_btn"
+        android:layout_gravity="center_horizontal" />
 
-    <SeekBar
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/seekBar3"
-        android:layout_gravity="center_horizontal"
-        android:max="10"
-        android:progress="1"
-        android:indeterminate="false" />
+        android:text="形态学处理"
+        android:id="@+id/morph_btn"
+        android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="nx:"
-        android:id="@+id/nxText" />
-
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar4"
-        android:layout_gravity="center_horizontal"
-        android:max="10"
-        android:progress="1"
-        android:indeterminate="false" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ny:"
-        android:id="@+id/nyText" />
+        android:text="倾斜矫正"
+        android:id="@+id/skew_btn" />
 </LinearLayout>
